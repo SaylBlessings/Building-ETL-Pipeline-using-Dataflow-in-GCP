@@ -11,7 +11,7 @@ import yaml
 with open("./schemas.yaml") as schema_file:
      config = yaml.load(schema_file, Loader=yaml.Loader)
 
-PROJECT_ID = os.getenv('cloudquicklab')
+PROJECT_ID = os.getenv('blessings-gcp-cloud-projects')
 BQ_DATASET = 'staging'
 CS = storage.Client()
 BQ = bigquery.Client()
